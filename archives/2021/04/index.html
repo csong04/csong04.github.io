@@ -5,12 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>csong</title>
-    
-<link rel="stylesheet" href="//unpkg.com/gitalk/dist/gitalk.css">
-
-    
-<script src="//unpkg.com/gitalk/dist/gitalk.min.js"></script>
-
+    <link rel="stylesheet" href="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.css" />
+    <script src="//cdn.bootcss.com/gitalk/1.5.0/gitalk.min.js"></script>
     
 <link rel="stylesheet" href="/css/style.css">
 
@@ -146,6 +142,20 @@
 </section>
 
         这是footer
+        
+            <div id="gitalk-container"></div>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '1da415753a14b44a679f',
+        clientSecret: 'f63f7804de9c91e4c8e548911f937a2f67cbaf28',
+        id: window.location.pathname,
+        repo: 'comment',
+        owner: 'csong04',
+        admin: 'csong04'
+    })
+    gitalk.render('gitalk-container')
+</script>
+        
         <div id="totop" title="返回顶部" style="bottom: -100px;"></div> 
         
 <script src="/js/totop.js"></script>
